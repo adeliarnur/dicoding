@@ -1,5 +1,6 @@
 package comm.example.asus_pc.traveltalk;
 
+import android.content.Intent;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ public class menu extends AppCompatActivity {
 
     private Button mNextBtn;
     private Button mPrevBtn;
+    private Button mFinish;
 
     private int mCurrentPage;
     @Override
@@ -97,7 +99,6 @@ public class menu extends AppCompatActivity {
                 mPrevBtn.setText("");
 
             } else if (i == mDots.length-1){
-
                 mNextBtn.setEnabled(true);
                 mPrevBtn.setEnabled(true);
                 mPrevBtn.setVisibility(View.VISIBLE);
@@ -105,7 +106,11 @@ public class menu extends AppCompatActivity {
                 mNextBtn.setText("Finish");
                 mPrevBtn.setText("Back");
 
-            } else {
+
+            }
+
+
+            if (i == mDots.length-2){
 
                 mNextBtn.setEnabled(true);
                 mPrevBtn.setEnabled(true);
@@ -114,7 +119,21 @@ public class menu extends AppCompatActivity {
                 mNextBtn.setText("Next");
                 mPrevBtn.setText("Back");
             }
+
+            if (mNextBtn.getText().toString()== "Finish"){
+                mNextBtn = (Button)findViewById(R.id.nextBtn);
+                mNextBtn.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Intent intent = new Intent(menu.this, listMenu.class);
+                        startActivity(intent);
+                    }
+                });
+
+            }
+
         }
+
 
         @Override
         public void onPageScrollStateChanged(int i) {
