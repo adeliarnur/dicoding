@@ -12,35 +12,40 @@
         android:layout_height="250dp" />
 
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
         <LinearLayout
-            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_weight="1"
             android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
+            android:orientation="vertical">
+
             <ImageView
-                android:src="@drawable/merry"
-                android:layout_width="120dp"
-                android:layout_height="120dp" />
+                android:layout_width="420dp"
+                android:layout_height="220dp"
+                android:src="@drawable/atas" />
+
             <TextView
-                android:text="Travelin Menu"
-                android:textSize="20dp"
-                android:layout_marginTop="20dp"
-                android:textColor="#ffffff"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Travelin Menu"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_weight="2"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
             android:background="#0f09f4d9"
-            android:layout_height="0dp">
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -52,59 +57,55 @@
                 <ImageButton
                     android:id="@+id/orang"
                     android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:background="@drawable/circlewhitemenu"
-                    android:src="@drawable/logo1" />
+                    android:layout_height="70dp"
+                    android:background=""
+                    android:src="" />
 
                 <ImageButton
-                    android:id="@+id/gramd"
+                    android:id="@+id/resto"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/ic_room" />
+
+                <ImageButton
+                    android:id="@+id/gunung"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/circlewhitemenu"
-                    android:src="@drawable/logo4" />
-
-                <ImageButton
-                    android:id="@+id/vcrs"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/circlewhitemenu"
-                    android:src="@drawable/logo6" />
+                    android:background="@drawable/ic_terrain" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_weight="1"
                 android:layout_width="0dp"
-                android:orientation="vertical"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
 
                 <ImageButton
                     android:id="@+id/mthr"
                     android:layout_width="120dp"
-                    android:layout_height="120dp"
+                    android:layout_height="70dp"
                     android:layout_marginLeft="40dp"
-                    android:background="@drawable/circlewhitemenu"
-                    android:src="@drawable/logo2" />
+                    android:background=""
+                    android:src="" />
 
                 <ImageButton
-                    android:id="@+id/lvs"
+                    android:id="@+id/kereta"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/ic_subway" />
+
+                <ImageButton
+                    android:id="@+id/kasur"
                     android:layout_width="120dp"
                     android:layout_height="120dp"
                     android:layout_marginLeft="40dp"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/circlewhitemenu"
-                    android:src="@drawable/logo5" />
-
-                <ImageButton
-                    android:id="@+id/vans"
-                    android:layout_width="120dp"
-                    android:layout_height="120dp"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/circlewhitemenu"
-                    android:src="@drawable/logo3" />
+                    android:background="@drawable/ic_local" />
 
             </LinearLayout>
 

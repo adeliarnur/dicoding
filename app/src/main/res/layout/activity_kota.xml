@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".kota">
+
+    <ImageButton
+        android:layout_width="760px"
+        android:layout_height="270px"
+        android:src="@drawable/slide4"
+        android:id="@+id/mlg"/>
+
+    <ImageButton
+        android:layout_width="760px"
+        android:layout_height="270px"
+        android:src="@drawable/slide2"
+        android:id="@+id/yog"
+        android:layout_below="@+id/mlg"/>
+
+    <ImageButton
+        android:layout_width="760px"
+        android:layout_height="270px"
+        android:layout_below="@+id/yog"
+        android:id="@+id/bali"
+        android:src="@drawable/slide3"/>
+
+    <ImageButton
+        android:layout_width="760px"
+        android:layout_height="270px"
+        android:layout_below="@+id/bali"
+        android:id="@+id/lmg"
+        android:src="@drawable/slide1"/>
+
+
+
+</RelativeLayout>

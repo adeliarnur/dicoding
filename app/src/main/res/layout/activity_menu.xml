@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bissmillah1"
+    android:background="@drawable/bissmillah5"
     tools:context=".menu">
 
     <android.support.v4.view.ViewPager
@@ -44,7 +44,7 @@
         android:layout_alignParentEnd="true"
         android:background="@drawable/trans_white_rectangle"
         android:backgroundTint="?android:attr/panelBackground"
-        android:text="next"
+        android:text="NEXT"
         android:textColor="#ffff" />
 
 </RelativeLayout>

@@ -95,7 +95,7 @@ public class menu extends AppCompatActivity {
                 mPrevBtn.setEnabled(false);
                 mPrevBtn.setVisibility(View.INVISIBLE);
 
-                mNextBtn.setText("Next");
+                mNextBtn.setText("NEXT");
                 mPrevBtn.setText("");
 
             } else if (i == mDots.length-1){
@@ -103,8 +103,8 @@ public class menu extends AppCompatActivity {
                 mPrevBtn.setEnabled(true);
                 mPrevBtn.setVisibility(View.VISIBLE);
 
-                mNextBtn.setText("Finish");
-                mPrevBtn.setText("Back");
+                mNextBtn.setText("FINISH");
+                mPrevBtn.setText("BACK");
 
 
             }
@@ -116,11 +116,11 @@ public class menu extends AppCompatActivity {
                 mPrevBtn.setEnabled(true);
                 mPrevBtn.setVisibility(View.VISIBLE);
 
-                mNextBtn.setText("Next");
-                mPrevBtn.setText("Back");
+                mNextBtn.setText("NEXT");
+                mPrevBtn.setText("BACK");
             }
 
-            if (mNextBtn.getText().toString()== "Finish"){
+            if (mNextBtn.getText().toString()== "FINISH"){
                 mNextBtn = (Button)findViewById(R.id.nextBtn);
                 mNextBtn.setOnClickListener(new View.OnClickListener() {
                     @Override
